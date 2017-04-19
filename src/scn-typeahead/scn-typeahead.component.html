@@ -1,0 +1,15 @@
+<div>
+  <input [(ngModel)]="asyncSelected"
+         [typeahead]="dataSource"
+         (typeaheadLoading)="changeTypeaheadLoading($event)"
+         (typeaheadNoResults)="changeTypeaheadNoResults($event)"
+         (typeaheadOnSelect)="_typeaheadOnSelect($event)"
+         [typeaheadOptionsLimit]="typeaheadOptionsLimit"
+         [typeaheadOptionField]="typeaheadOptionField"
+         [placeholder]="placeholder"
+         class="form-control">
+  <span *ngIf="typeaheadLoading">loading...</span>
+  <div *ngIf="typeaheadNoResults">
+    No Results Found
+  </div>
+</div>
