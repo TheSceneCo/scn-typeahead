@@ -1,6 +1,6 @@
 {
-  "name": "scn-typeahead",
-  "version": "0.0.0",
+  "name": "@thescene/scn-typeahead",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "typings": "src/index.ts",
