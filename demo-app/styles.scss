@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+typeahead-container {
+  background: white;
+  width: 100%;
+  border: 1px solid #ccc;
+
+  ul {
+    list-style-type: none;
+    padding: 0 12px;
+    font-size: 14px;
+
+    li a {
+      color: #333;
+      text-decoration: blink;
+    }
+  }
+}
