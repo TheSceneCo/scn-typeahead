@@ -1,2 +1,41 @@
-:host {
+:host /deep/ {
+  scn-typeahead {
+    input {
+      border-bottom: 0 !important;
+    }
+  }
+
+  typeahead-container {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 0;
+    top: 2px;
+    z-index: 1000;
+    width: auto;
+
+    ul {
+      list-style-type: none;
+      padding: 0 12px;
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+
+
+      li a {
+        color: #8a8a8a;;
+        text-decoration: blink;
+      }
+
+      li {
+        border-bottom: 1px solid #ccc;
+        padding: 8px 15px;
+
+        &.active a {
+          color: #000;
+        }
+      }
+    }
+  }
 }
