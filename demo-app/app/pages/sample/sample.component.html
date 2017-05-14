@@ -1,10 +1,33 @@
-<scn-typeahead
-    [placeholder]="'Filter by tags...'"
-    [(ngModel)]="asyncSelected"
-    [dataSource]="dataSource"
-    typeaheadOptionField="name"
-    typeaheadOptionsLimit="10"
-    (typeaheadOnSelect)="typeaheadOnSelect($event)"
-    ngDefaultControl
->
-</scn-typeahead>
+<div class="example">
+  <div>
+    <h3>Typeahead for tags</h3>
+    <p></p>
+    <scn-typeahead
+        [placeholder]="'Filter by tags...'"
+        [(ngModel)]="asyncSelected"
+        [dataSource]="dataSource"
+        typeaheadOptionField="name"
+        typeaheadOptionsLimit="10"
+        (typeaheadOnSelect)="typeaheadOnSelect($event)"
+        ngDefaultControl
+    >
+    </scn-typeahead>
+
+  </div>
+
+  <div>
+    <h3>Typeahead for tags</h3>
+    <p></p>
+    <scn-typeahead
+        [placeholder]="'Filter by tags...'"
+        [(ngModel)]="asyncSelected"
+        [dataSource]="dataSource"
+        typeaheadOptionField="name"
+        typeaheadOptionsLimit="10"
+        (typeaheadOnSelect)="typeaheadOnSelect($event)"
+        ngDefaultControl
+    >
+    </scn-typeahead>
+
+  </div>
+</div>

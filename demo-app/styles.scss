@@ -1,17 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-typeahead-container {
-  background: white;
-  width: 100%;
-  border: 1px solid #ccc;
+//typeahead-container {
+//  background: white;
+//  width: 100%;
+//  border: 1px solid #ccc;
+//
+//  ul {
+//    list-style-type: none;
+//    padding: 0 12px;
+//    font-size: 14px;
+//
+//    li a {
+//      color: #333;
+//      text-decoration: blink;
+//    }
+//  }
+//}
+.example {
+  padding: 20px;
+  width: 900px;
+  margin: 0 auto;
 
-  ul {
-    list-style-type: none;
-    padding: 0 12px;
-    font-size: 14px;
-
-    li a {
-      color: #333;
-      text-decoration: blink;
-    }
+  p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
   }
 }

@@ -1,8 +1,6 @@
 :host /deep/ {
-  scn-typeahead {
-    input {
-      border-bottom: 0 !important;
-    }
+  input {
+    float: none !important;
   }
 
   typeahead-container {
@@ -21,7 +19,6 @@
       font-size: 14px;
       padding: 0;
       margin: 0;
-
 
       li a {
         color: #8a8a8a;;
