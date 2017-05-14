@@ -1,5 +1,5 @@
 <div>
-  <input [(ngModel)]="asyncSelected"
+  <input [(ngModel)]="typeaheadValue"
          [typeahead]="dataSource"
          (typeaheadLoading)="changeTypeaheadLoading($event)"
          (typeaheadNoResults)="changeTypeaheadNoResults($event)"

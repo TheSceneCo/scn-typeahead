@@ -11,6 +11,7 @@ import { TypeaheadMatch } from 'ngx-bootstrap';
 export class SampleComponent implements OnInit {
 
   public asyncSelected: string;
+  public valueSelected: string = 'trump';
   public dataSource: Observable<any>;
   service: TagsService = new TagsService();
 
@@ -25,7 +26,7 @@ export class SampleComponent implements OnInit {
     this.dataSource = Observable
         .create((observer: any) => {
           // Runs on every search
-          observer.next(this.asyncSelected);
+          observer.next(this.valueSelected);
         })
         .mergeMap((token: string) => {
           return this.getData(token);
@@ -47,6 +48,7 @@ export class SampleComponent implements OnInit {
   }
 
   typeaheadOnSelect(e: TypeaheadMatch) {
+    console.log('Selected valueSelected: ', this.valueSelected);
     console.log('Selected value: ', e.value);
   }
 

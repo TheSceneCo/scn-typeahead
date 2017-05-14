@@ -19,8 +19,8 @@
     <h3>Typeahead for tags</h3>
     <p></p>
     <scn-typeahead
+        [(ngModel)]="valueSelected"
         [placeholder]="'Filter by tags...'"
-        [(ngModel)]="asyncSelected"
         [dataSource]="dataSource"
         typeaheadOptionField="name"
         typeaheadOptionsLimit="10"
